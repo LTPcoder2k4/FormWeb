@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500&display=swap');
+body{
+    background-color: #b1eaff;
+    font-size: 1.6rem;
+    font-family: 'Mali', cursive;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card{
+    width: 70%;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.0px );
+    -webkit-backdrop-filter: blur( 1.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-weight: 500;
+}
+
+.container .card .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(118, 255, 234, 0.4);
+    border-radius: 10px;
+    height: fit-content;
+    color: #ffb1ea;
+    font-size: 2.4rem;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.container .card .content{
+    margin: 2rem;
+    color: #ffb184;
+}

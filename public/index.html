@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="icon" href="./LogoKHST.png">
+    <script src="./jquery-3.6.0.min.js"></script>
+    <title>Ứng tuyển thành viên</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      $( document ).ready(function() {
+        $('#0').click(function(event){
+          $(this).addClass('active')
+          $('#1').removeClass('active')
+          $('#2').removeClass('active')
+          $('#3').removeClass('active')
+        })
+        $('#1').click(function(event){
+          $(this).addClass('active')
+          $('#0').removeClass('active')
+          $('#2').removeClass('active')
+          $('#3').removeClass('active')
+        })
+        $('#2').click(function(event){
+          $(this).addClass('active')
+          $('#1').removeClass('active')
+          $('#0').removeClass('active')
+          $('#3').removeClass('active')
+        })
+        $('#3').click(function(event){
+          $(this).addClass('active')
+          $('#1').removeClass('active')
+          $('#2').removeClass('active')
+          $('#0').removeClass('active')
+        })
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500&display=swap');
+body{
+    background-color: #b1eaff;
+    font-size: 1.6rem;
+    font-family: 'Mali', cursive;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .form{
+    width: 70%;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.0px );
+    -webkit-backdrop-filter: blur( 1.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-weight: 500;
+}
+
+.container .form .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(118, 255, 234, 0.4);
+    border-radius: 10px;
+    height: fit-content;
+    color: #ffb1ea;
+    font-size: 2.4rem;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.container .form .element{
+    margin: 2rem;
+    color: #ffb184;
+    background-color: rgba(118, 255, 234, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.container .form .element input,
+.container .form .element .section{
+    font-size: 1.8rem;
+}
+
+.container .form .element input,
+.container .form .element input:focus,
+.container .form .element input:valid{
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #ffb5b1;
+    border-bottom: #ffb5b1 solid 0.2rem;
+    padding: 0.5rem;
+    width: 70%;
+}
+
+.container .form .element .chose{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .form .element .section{
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #ffb5b1;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.container .form .element .section.active{
+    background-color: #ffb5b1;
+    color: white;
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button .submit{
+    height: 2rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #76ffea;
+    color: #ffb1ea;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+    body{
+        font-size: 1.1rem;
+    }
+    .container .form .title{
+        font-size: 2rem;
+    }
+    .container .form .element input,
+    .container .form .element .section{
+        font-size: 1.3rem;
+    }
+}
