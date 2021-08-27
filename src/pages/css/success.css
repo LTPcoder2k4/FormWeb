@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500&display=swap');
+body{
+    background-color: #282a36;
+    font-size: 1.6rem;
+    font-family: 'Mali', cursive;
+    box-sizing: border-box;
+}
+
+.container-success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+
+.container-success .card{
+    width: 70%;
+    background: #6272a4;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.0px );
+    -webkit-backdrop-filter: blur( 1.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container-success .card .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #44475a;
+    border-radius: 10px;
+    height: fit-content;
+    color: #ff79c6;
+    font-size: 2.4rem;
+    padding: 1rem;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.container-success .card .content{
+    margin: 1rem;
+    padding: 1rem;
+    color: #ffb86c;
+    background-color: #44475a;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+@media only screen and (max-width: 500px){
+    body{
+        font-size: 1.1rem;
+    }
+    .container-success .card .title{
+        font-size: 1.4rem;
+    }
+}

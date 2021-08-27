@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500&display=swap');
+body{
+    background-color: #282a36;
+    font-size: 1.6rem;
+    font-family: 'Mali', cursive;
+    box-sizing: border-box;
+}
+
+.container-register{
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-register .form{
+    width: 70%;
+    background: #6272a4;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.0px );
+    -webkit-backdrop-filter: blur( 1.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-weight: 500;
+}
+
+.container-register .form .element{
+    margin: 2rem;
+    color: #8be9fd;
+    background-color: #44475a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container-register .form .element input,
+.container-register .form .element .section{
+    font-size: 1.8rem;
+}
+
+.container-register .form .element input,
+.container-register .form .element input:focus,
+.container-register .form .element input:valid{
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #ffb86c;
+    border-bottom: #ff79c6 solid 0.2rem;
+    padding: 0.5rem;
+    width: 70%;
+}
+
+.container-register .form .element .chose{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-register .form .element .section{
+    width: 100%;
+    background-color: #6272a4;
+    color: #ffb86c;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container-register .form .element .section.active{
+    background-color: #ffb86c;
+    color: #6272a4;
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button .submit{
+    height: 2rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #44475a;
+    color: #ff79c6;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+@media only screen and (max-width: 500px){
+    body{
+        font-size: 1.1rem;
+    }
+    .container-register .form .element input,
+    .container-register .form .element .section{
+        font-size: 1.2rem;
+    }
+}
